@@ -28,7 +28,7 @@ jobs:
             fi
 
             cd Podcast_backend  || exit 1
-            git pull origin master
+            git pull origin main
 
             echo "MONGO_URI=${{ secrets.MONGO_URI }}" > .env
             echo "PORT=3001" >> .env
